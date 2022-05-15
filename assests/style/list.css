@@ -1128,3 +1128,78 @@
 
     color: #F06336;
 }
+
+.footer {
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .short-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .short-contact .contact-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .short-contact .contact-wrap:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer .short-contact .contact-wrap svg {
+    margin-right: 10px;
+}
+
+.footer .short-contact .contact-wrap .text {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+}
+
+.footer .follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .follow>* {
+    margin: 0 6px;
+}
+
+.footer .follow .follow-name {
+
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: 0.1em;
+}
+
+.footer .follow .follow-line {
+    width: 40px;
+    height: 0px;
+
+    border: 1px solid #000000;
+}
+
+.footer .follow .follow-icon {
+    display: flex;
+    margin: 0 6px;
+}
