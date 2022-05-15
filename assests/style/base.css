@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "SVN-Biennale";
+    src: url("../font/Biennale\ Black\ It.otf");
+    src: url("../font/Biennale\ Black.otf");
+    src: url("../font/Biennale\ Bold.otf");
+    src: url("../font/Biennale\ Bold\ It.otf");
+    src: url("../font/Biennale\ Light\ It.otf");
+    src: url("../font/Biennale\ Medium.otf");
+}
+
+:root {
+    --primary-color: #4D46FA --secondary-color: #F06336;
+    --home-bg-color: #F4F2F9;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'SVN-Biennale';
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    gap: 10px;
+    color: #fff;
+    background: #4d46fa;
+    border-radius: 12px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+select {
+
+    /* styling */
+    border: none;
+    background-color: transparent;
+    font: inherit;
+    line-height: 1.5em;
+    outline: none;
+  
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }

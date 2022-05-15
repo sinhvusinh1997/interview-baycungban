@@ -1,0 +1,1130 @@
+.list-container {
+    overflow-x: hidden;
+    background-color: #F4F2F9;
+    min-height: 100vh;
+}
+
+.content {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #4D46FA;
+}
+
+.header .content {
+    height: 10%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: #fff;
+
+}
+
+.header .content .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .content .logo .logo-brand a {
+    margin-right: 6px;
+    font-weight: bold;
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.header .content .logo .logo-language {
+    display: flex;
+}
+
+.header .content .logo .logo-language>* {
+    display: flex;
+    padding: 0 6px;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0px 1px #4c46fab3;
+    }
+
+    50% {
+        box-shadow: 0 0 0px 1.5px #4d46fa;
+    }
+
+    100% {
+        box-shadow: 0 0 0px 2px #4d46fa;
+    }
+}
+
+.header .content .logo .logo-language>*:hover svg {
+    cursor: pointer;
+    border-radius: 50%;
+    animation: shadow 0.3s ease-in-out forwards;
+}
+
+.header .content .navigation {
+    display: flex;
+}
+
+.header .content .navigation li.nav-item a.nav-link {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    transition: all 0.4s ease-in-out;
+    color: #fff;
+}
+
+.header .content .booking-now {
+    background-color: #fff;
+    color: #4D46FA;
+    opacity: 0.9;
+}
+
+.header .content button.booking-now:hover {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.header .content .navigation li.nav-item a.nav-link:hover,
+.header .content .navigation li.nav-item a.nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+
+}
+
+.header .content .nav-mobile-icon {
+    display: none;
+}
+
+.header .content .nav-mobile {
+    display: none;
+}
+
+.flight-info .content {
+    background-color: #fff;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.flight-info .content .flight-route {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.flight-info .content .flight-route .departure {
+    width: 40%;
+}
+
+.flight-info .content .flight-route .arrow-sign {
+    width: 20%;
+
+}
+
+.flight-info .content .flight-route .return {
+    width: 40%;
+
+}
+
+
+.flight-info .content .flight-route .departure .place,
+.flight-info .content .flight-route .return .place {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #4D46FA;
+}
+
+.flight-info .content .flight-route .departure .time,
+.flight-info .content .flight-route .return .time {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.flight-info .content .flight-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.flight-info .content .flight-type>* {
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 15px;
+}
+
+.flight-info .content .flight-type .type,
+.flight-info .content .flight-type .people {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.flight-info .content .change-flight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+
+    background: #F06336;
+    border-radius: 12px;
+}
+
+.flight-info .content .change-flight:hover {
+    cursor: pointer;
+    background: #e44814;
+    transition: all 0.3s ease-in-out;
+}
+
+.flight-info .content .change-flight .text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 10px;
+
+    color: #FFFFFF;
+}
+
+.flight-info .content .change-flight svg {
+    width: 14px;
+    height: 14px;
+}
+
+.main {
+    background-color: #f4f2f9;
+}
+
+.main .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.main .content>* {
+    border-radius: 12px;
+}
+
+.main .content .left {
+    width: 77%;
+}
+
+.main .content .left .filter {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f4f2f9;
+    margin-bottom: 10px;
+}
+
+.main .content .left .filter .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 20px;
+
+    color: #000000;
+    opacity: 0.5;
+}
+
+.main .content .left .filter ul.filter-list {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .left .filter ul.filter-list li.filter-item {
+    border-radius: 12px;
+    background-color: #fff;
+    margin: 0 3px;
+    margin-top: 0;
+    position: relative;
+    width: 120px;
+}
+
+.main .content .left .filter ul.filter-list li.filter-item select {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    width: 100%;
+    height: 34px;
+    padding-left: 15px;
+
+    color: #000000;
+}
+
+.main .content .left .filter ul.filter-list li.filter-item svg {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main .content .left .flight-list .flight-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.main .content .left .flight-list .flight-item .main {
+    height: 124px;
+
+    background: #FFFFFF;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    /* border-radius: 12px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    z-index: 10;
+
+}
+
+.main .content .left .flight-list .flight-item .main .show-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    overflow: hidden;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info:hover,
+.main .content .left .flight-list .flight-item .main .show-info.active {
+    cursor: pointer;
+    background-color: rgba(76, 70, 250, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .content .left .flight-list .flight-item .main .btn-show-more {
+    height: 46px;
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .content .left .flight-list .flight-item .main .btn-show-more .flight-detail,
+.main .content .left .flight-list .flight-item .main .btn-show-more .fareinfo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #000;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+.main .content .left .flight-list .flight-item .main .btn-show-more .flight-detail:hover,
+.main .content .left .flight-list .flight-item .main .btn-show-more .flight-detail.active,
+.main .content .left .flight-list .flight-item .main .btn-show-more .fareinfo:hover,
+.main .content .left .flight-list .flight-item .main .btn-show-more .fareinfo.active {
+    color: #4D46FA;
+    opacity: 1;
+    border-bottom: 2px solid #4D46FA;
+}
+
+.main .content .left .flight-list .flight-item .linear {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 72%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.main .content .left .flight-list .flight-item .linear.active {
+    opacity: 1;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .brand-of-flight {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.main .content .left .flight-list .flight-item .main .show-info .brand-of-flight .brand {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: auto;
+    padding-left: 10px;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time>* {
+    padding: 20px 0;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .time {
+    width: unset;
+    text-align: center;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .time .date {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .time button.dad {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    background: rgba(77, 70, 250, 0.1);
+    border-radius: 100px;
+    outline: none;
+    border: none;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .center .long {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .detail-time .center .direct {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .info .baggage,
+.main .content .left .flight-list .flight-item .main .show-info .info .in-flight {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .info .baggage svg,
+.main .content .left .flight-list .flight-item .main .show-info .info .in-flight svg {
+    margin-right: 10px;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .info .baggage span,
+.main .content .left .flight-list .flight-item .main .show-info .info .in-flight span {
+    color: #4D46FA;
+    margin-left: 5px;
+}
+
+
+.main .content .left .flight-list .flight-item .main .show-info .price .discount {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: line-through;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .price .normal {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #F06336;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .choose {
+    border: none;
+    outline: none;
+    background: rgba(240, 99, 54, 0.1);
+    border-radius: 12px;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .choose .text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 12px;
+    color: #F06336;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .choose:hover,
+.main .content .left .flight-list .flight-item .main .show-info .choose.active {
+    background-color: #F06336;
+}
+
+.main .content .left .flight-list .flight-item .main .show-info .choose .text:hover,
+.main .content .left .flight-list .flight-item .main .show-info .choose .text.active {
+    color: #fff;
+}
+
+.main .content .left .flight-list .flight-item .more {
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: flex;
+    height: 220px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail,
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail {
+    /* position: absolute; */
+    height: 0;
+    opacity: 1;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    padding: 0px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail.active,
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail.active {
+    height: 220px;
+    opacity: 1;
+    padding: 20px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left {
+    width: 40%;
+    height: 180px;
+    display: flex;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .time-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .time-wrap .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .time-wrap .wrap .time {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .time-wrap .wrap .date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .time-wrap .long {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left svg {
+    margin: auto 10px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .ori,
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .des {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .ori span,
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .des span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .ori span.airport,
+.main .content .left .flight-list .flight-item .more.more-flight-detail .left .place .des span.airport {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right {
+    width: 60%;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .brand-of-flight {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .brand-of-flight svg {
+    margin-right: 20px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .brand-of-flight .wrap .brand {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .brand-of-flight .wrap .code-flight {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .info {
+    width: 500px;
+    height: 101px;
+    background: #F4F2F9;
+    border-radius: 12px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 8px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .info .list-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .info .list-info>* {
+    width: 50%;
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 2px 0;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-flight-detail .right .info .list-info>* span {
+    color: #4D46FA;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions {
+    width: 40%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .title {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .brand-of-flight {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .brand-of-flight svg {
+    margin-right: 20px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .brand-of-flight .wrap .brand {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .brand-of-flight .wrap .code-flight {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys {
+    display: flex;
+    align-items: baseline;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys svg {
+    margin: 0 10px;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys .from {
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys .from .place,
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys .to .place {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys .from .notify,
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .jouneys .to .notify {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4D46FA;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .conditions .note {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details .title {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details .list .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details .list .item .title {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #000000ab;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details .list .item .price {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000ab;
+}
+
+.main .content .left .flight-list .flight-item .more.more-fareInfo-detail .price-details .list .item:last-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Your flights */
+.main .content .your-flights {
+    width: 22%;
+    background-color: #fff;
+}
+
+.main .content .your-flights .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 14px 0 14px 15px;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info {
+    padding: 10px 20px;
+}
+
+.main .content .your-flights .info .departure-time,
+.main .content .your-flights .info .return-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main .content .your-flights .info .return-time {
+    margin-bottom: unset;
+}
+
+.main .content .your-flights .info .collapse-select .main {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.main .content .your-flights .info .collapse-select .main:hover {
+    cursor: pointer;
+    background-color: rgba(76, 70, 250, 0.1);
+    border-radius: 12px;
+}
+
+.main .content .your-flights .info .collapse-select .main .id-flight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    background: #4D46FA;
+    border-radius: 100px;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+.main .content .your-flights .info .collapse-select .main .id-flight.active {
+    background-color: #979797;
+    transition: all 0.3s ease-in;
+}
+
+.main .content .your-flights .info .collapse-select .main .wrap {
+    padding-left: 20px;
+}
+
+.main .content .your-flights .info .collapse-select .main .wrap .time {
+
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .main .wrap .place {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+@keyframes moreEf {
+    0% {
+        height: 44.8px;
+        opacity: 0;
+    }
+
+    25% {
+        height: 89.6px;
+        opacity: 0.25;
+    }
+
+    50% {
+        height: 134.4px;
+        opacity: 0.5;
+    }
+
+    75% {
+        height: 179.2px;
+        opacity: 0.7;
+    }
+
+    100% {
+        height: 180px;
+        opacity: 1;
+    }
+}
+
+.main .content .your-flights .info .collapse-select .more {
+    padding: 10px 0;
+    overflow-y: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.main .content .your-flights .info .collapse-select .more.active {
+    animation: moreEf linear 0.3s forwards;
+}
+
+
+.main .content .your-flights .info .collapse-select .more .brand-of-flight {
+    display: flex;
+    align-items: center;
+}
+
+.main .content .your-flights .info .collapse-select .more .brand-of-flight .wrap {
+    padding-left: 20px;
+}
+
+.main .content .your-flights .info .collapse-select .more .brand-of-flight .wrap .brand {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .more .brand-of-flight .wrap+a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: underline;
+
+    color: #4D46FA;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time>* {
+    padding: 20px 0;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .time {
+    width: unset;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .time .date {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .time button.dad {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 5px;
+    background: rgba(77, 70, 250, 0.1);
+    border-radius: 100px;
+    outline: none;
+    border: none;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .center .long {
+    font-family: 'SVN-Biennale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .more .detail-time .center .direct {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.main .content .your-flights .info .collapse-select .more button.change {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(77, 70, 250, 0.1);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.main .content .your-flights .info .collapse-select .more button.change .text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 16px;
+
+
+    color: #4D46FA;
+}
+
+.main .content .your-flights .subtotal {
+    background: #F8F8F8;
+    border-radius: 0px 0px 12px 12px;
+    padding: 15px 0 15px 15px;
+}
+
+
+
+
+.main .content .your-flights .subtotal .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    border: none;
+    padding: 0;
+
+    color: #000000;
+}
+
+.main .content .your-flights .subtotal .price {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #F06336;
+}

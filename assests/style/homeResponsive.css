@@ -1,0 +1,489 @@
+@media only screen and (min-width : 320px) and (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+
+    .content .hc-top {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .content .hc-top .logo .logo-brand {
+        font-size: 2.6rem;
+    }
+
+    .home-container .hc-top .logo .logo-language,
+    .content .hc-top .booking-now,
+    .content .hc-top .navigation {
+        display: none;
+    }
+
+    .content .hc-top .nav-mobile-icon {
+        display: block;
+    }
+
+    .content .hc-top .nav-mobile-icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content .hc-top .nav-mobile {
+        display: flex;
+        position: absolute;
+        top: 100%;
+        overflow-x: auto;
+        opacity: 0;
+        right: -200px;
+        transition: all 0.3s linear;
+    }
+
+    .content .hc-top .nav-mobile.active {
+        right: 20px;
+        opacity: 1;
+    }
+
+    .content .hc-top .nav-mobile .navigation {
+        display: flex;
+    }
+
+    .content .hc-top .nav-mobile .navigation .nav-item {
+        margin: auto;
+    }
+
+    .content .hc-top .nav-mobile .navigation .nav-item .nav-link {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .content .hc-top .nav-mobile .booking-now {
+        display: block;
+    }
+
+    .content .hc-title {
+        padding-left: 10px;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    .content .hc-title>* {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .content .hc-main {
+        min-height: 330px;
+    }
+
+    .content .hc-main .select-wrap {
+        width: 100%;
+        top: 10px;
+        height: 60px;
+        overflow: auto;
+        left: 10px;
+        padding: 0 43px;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap {
+        width: 180px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap:last-child {
+        width: 96px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .center {
+        flex-direction: column;
+    }
+
+    .content .hc-main .center .flight-route {
+        width: 100%;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    .content .hc-main .center .flight-route .locate-from .title,
+    .content .hc-main .center .flight-route .locate-to .title,
+    .content .hc-main .center .flight-route .locate-from .nation,
+    .content .hc-main .center .flight-route .locate-to .nation {
+        font-size: 10px;
+    }
+
+    .content .hc-main .center .flight-route .locate-from .city,
+    .content .hc-main .center .flight-route .locate-to .city {
+        font-size: 18px;
+    }
+
+    .content .hc-main .center .flight-route .locate-from .hafl-circle {
+        transform: rotate(-90deg);
+        right: -29px;
+    }
+
+    .content .hc-main .center .flight-route .locate-to .hafl-circle {
+        transform: rotate(90deg);
+        left: -29px;
+    }
+
+
+    .content .hc-main .center .flight-date {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .content .hc-main .center .flight-date .departure,
+    .content .hc-main .center .flight-date .return {
+        padding: 5px;
+    }
+
+    .content .hc-main .center .flight-date .departure .title,
+    .content .hc-main .center .flight-date .return .title {
+        font-size: 10px;
+    }
+
+    .content .hc-main .center .flight-date .departure .date-wrap .show-wrap .show-date,
+    .content .hc-main .center .flight-date .return .date-wrap .show-wrap .show-date {
+        font-size: 16px;
+    }
+
+    .content .hc-main .center .flight-date .departure .date-wrap .show-wrap svg.date-mask,
+    .content .hc-main .center .flight-date .return .date-wrap .show-wrap svg.date-mask {
+        width: 28px;
+        height: 28px;
+    }
+
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .next-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .next-day {
+        font-size: 14px;
+    }
+
+    .content .hc-main .search-flight {
+        width: 145px;
+        height: 40px;
+    }
+
+    .content .hc-main .search-flight svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .content .hc-main .search-flight .text {
+        font-size: 1.2rem;
+    }
+
+    .content .hc-footer {
+        height: 100px;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 50px 0 20px;
+        align-items: baseline;
+        padding-left: 20px;
+    }
+
+    .content .hc-footer .short-contact {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap {
+        padding: 10px 0;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap svg {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap .text {
+        font-size: 16px;
+    }
+
+    .content .hc-footer .follow .follow-icon {
+        display: flex;
+        margin: 0 6px;
+    }
+
+    .home-foot {
+        left: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 568px) and (max-width : 768px) {
+
+    .content .hc-main .center {
+        padding: 0 90px;
+    }
+
+
+}
+
+@media only screen and (min-width : 768px) and (max-width: 992px) {
+    .content {
+        width: 98%;
+    }
+
+    .content .hc-top {
+        margin: 20px 0;
+    }
+
+    .content .hc-top .logo .logo-brand {
+        font-size: 2rem;
+    }
+
+    .content .hc-top .navigation li.nav-item a.nav-link {
+        font-size: 1.2rem;
+    }
+
+    .content .hc-title {
+        padding-left: 10px;
+        justify-content: flex-end;
+        margin-top: 80px;
+    }
+
+    .content .hc-title>* {
+        font-size: 34px;
+        line-height: 36px;
+    }
+
+    .content .hc-main {
+        min-height: 360px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content .hc-main .select-wrap {
+        width: 100%;
+        top: 20px;
+        height: 80px;
+        overflow: auto;
+        left: 0;
+        padding: 0 10px;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap {
+        width: 180px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap:last-child {
+        width: 96px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .center {
+        top: 100px;
+        flex-direction: column;
+        padding: 0 80px;
+    }
+
+    .content .hc-main .center .flight-route {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .content .hc-main .center .flight-date {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content .hc-main .center .flight-date .departure .title,
+    .content .hc-main .center .flight-date .return .title {
+        font-size: 15px;
+    }
+
+    .content .hc-main .center .flight-date .departure .date-wrap .show-date,
+    .content .hc-main .center .flight-date .return .date-wrap .show-date {
+        font-size: 18px;
+    }
+
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .next-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .next-day {
+        font-size: 14px;
+    }
+
+    .content .hc-main .search-flight {
+        width: 200px;
+        height: 50px;
+    }
+
+    .content .hc-main .search-flight svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content .hc-main .search-flight .text {
+        font-size: 1.5rem;
+    }
+
+    .content .hc-footer {
+        height: 100px;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 50px 0 20px;
+        align-items: baseline;
+        padding-left: 20px;
+    }
+
+    .content .hc-footer .short-contact {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap {
+        padding: 10px 0;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap svg {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap .text {
+        font-size: 16px;
+    }
+
+    .content .hc-footer .follow .follow-icon {
+        display: flex;
+        margin: 0 6px;
+    }
+
+    .home-foot {
+        display: none;
+    }
+}
+
+@media only screen and (min-width : 992px) and (max-width: 1200px) {
+    .content {
+        width: 100%;
+    }
+
+    .content .hc-top {
+        margin-top: 30px;
+    }
+
+    .content .hc-title {
+        margin-top: 140px;
+    }
+
+    .content .hc-title>* {
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .content .hc-main {
+        min-height: 360px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .content .hc-main .select-wrap {
+        width: 100%;
+        top: 20px;
+        height: 80px;
+        overflow: auto;
+        padding: 0 10px;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap {
+        width: 180px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .select-wrap .flight-type .type-wrap:last-child {
+        width: 96px;
+        justify-content: unset;
+    }
+
+    .content .hc-main .center {
+        top: 100px;
+        flex-direction: column;
+        padding: 0 120px;
+    }
+
+    .content .hc-main .center .flight-route {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+
+    .content .hc-main .center .flight-date {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content .hc-main .center .flight-date .departure .title,
+    .content .hc-main .center .flight-date .return .title {
+        font-size: 15px;
+    }
+
+    .content .hc-main .center .flight-date .departure .date-wrap .show-date,
+    .content .hc-main .center .flight-date .return .date-wrap .show-date {
+        font-size: 18px;
+    }
+
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .departure .pick-short-day .pick-day .next-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .prev-day,
+    .content .hc-main .center .flight-date .return .pick-short-day .pick-day .next-day {
+        font-size: 14px;
+    }
+
+    .content .hc-main .search-flight {
+        width: 200px;
+        height: 50px;
+    }
+
+    .content .hc-main .search-flight svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content .hc-main .search-flight .text {
+        font-size: 1.5rem;
+    }
+
+    .content .hc-footer {
+        height: 100px;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 50px 0 20px;
+        align-items: baseline;
+        padding-left: 20px;
+    }
+
+    .content .hc-footer .short-contact {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap {
+        padding: 10px 0;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap svg {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .content .hc-footer .short-contact .contact-wrap .text {
+        font-size: 16px;
+    }
+
+    .content .hc-footer .follow .follow-icon {
+        display: flex;
+        margin: 0 6px;
+    }
+
+    .home-foot {
+        display: none;
+    }
+}
